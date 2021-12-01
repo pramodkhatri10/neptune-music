@@ -1,3 +1,10 @@
+// resources used:
+//https://stackoverflow.com/questions/43193341/how-to-generate-random-pastel-or-brighter-color-in-javascript
+//https://521dimensions.com/open-source/amplitudejs/docs
+//https://www.yworks.com/pages/diagram-visualization-with-typescript
+//https://stackoverflow.com/questions/61430300/how-to-get-a-waveform-music-player-with-angular-typescript
+
+
 // 3rd party library imports
 import P5 from "p5";
 import * as Tone from "tone"; 
@@ -34,7 +41,8 @@ export const WallCurtainVisualizer = new Visualizer(
       const y = 0;
       const h = amplitude * height * 2;
 
-      if (amplitude !== 0) { // Keeping the colors on the ideal state
+// Keeping the colors on the ideal state
+      if (amplitude !== 0) { 
         p5.fill(randomColors[i % initialPoints]);
         p5.rect(x, y, initialPoints, h, 5, 5, 50);
       }
