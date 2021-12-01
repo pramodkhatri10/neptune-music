@@ -89,3 +89,80 @@ html, body, #root {
   from {transform:rotate(0deg);}
   to {transform:rotate(360deg);}
 }
+
+.guitar {
+  display: flex;
+  position: relative;
+  height: 40vh;
+  width: 100%;
+}
+
+.guitar-circle {
+  position: relative;
+  height: 80%;
+  aspect-ratio: 1 / 1;
+  background: black;
+  align-self: center;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.guitar-circle::after {
+  position: absolute;
+  content: "";
+  width: calc(100% - 40px);
+  height: calc(100% - 40px);
+  left: 10px;
+  top: 10px;
+  border: 10px solid white;
+  border-radius: 50%;
+}
+
+.guitar-strings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 15%;
+  width: 100%;
+  height: 70%;
+}
+
+.guitar-string {
+  width: 100%;
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(23, auto);
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.guitar-note:hover {
+  opacity: 1;
+}
+
+.guitar-note:hover .note-name {
+  display: flex;
+}
+
+.guitar-note {
+  background:#cd7f32;
+  opacity: 0.5;
+  border-right: 1px solid white;
+  position: relative;
+}
+
+.note-name {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  left: calc(50% - 17px);
+  bottom: calc(100% + 5px);
+  border-radius: 50%;
+  background: chocolate;
+  color: white;
+}

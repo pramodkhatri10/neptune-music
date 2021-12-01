@@ -7,7 +7,7 @@ import { Visualizer } from "../Visualizers";
 
 const randomInt = (max: number) => Math.floor(Math.random() * max) + 1;
 
-export const PramodKhatri10 = new Visualizer(
+export const RingVisualizer = new Visualizer(
   "PramodKhatri10",
   (p5: P5, analyzer: Tone.Analyser) => {
     const width = window.innerWidth;

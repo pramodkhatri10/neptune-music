@@ -6,7 +6,10 @@ import { PianoInstrument } from './instruments/Piano';
 import { WaveformVisualizer } from './visualizers/Waveform';
 
 
-import { PramodKhatri10 } from "./visualizers/Pramodkhatri10";
+import { RingVisualizer } from "./visualizers/Pramodkhatri10";
+import { GuitarInstrument } from "./instruments/Pramodkhatri10";
+
+
 
 
 /** ------------------------------------------------------------------------ **
@@ -21,9 +24,11 @@ import { PramodKhatri10 } from "./visualizers/Pramodkhatri10";
  */
 export type AppState = Map<string, any>;
 
-const instruments = List([PianoInstrument]);
+const instruments = List([PianoInstrument,
+  GuitarInstrument //Pramodkhatri10
+]);
 const visualizers = List([WaveformVisualizer,
-  PramodKhatri10
+  RingVisualizer //Pramodkhatri10
 ]);
 
 
