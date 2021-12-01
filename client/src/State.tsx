@@ -10,6 +10,8 @@ import { RingVisualizer } from "./visualizers/Pramodkhatri10";
 import { GuitarInstrument } from "./instruments/Pramodkhatri10";
 
 
+import { CrossSquareVisualizer } from "./visualizers/rujarajbhandari";
+
 
 
 /** ------------------------------------------------------------------------ **
@@ -28,7 +30,8 @@ const instruments = List([PianoInstrument,
   GuitarInstrument //Pramodkhatri10
 ]);
 const visualizers = List([WaveformVisualizer,
-  RingVisualizer //Pramodkhatri10
+  RingVisualizer, //Pramodkhatri10
+  CrossSquareVisualizer
 ]);
 
 
