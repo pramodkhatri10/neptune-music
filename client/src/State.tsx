@@ -8,7 +8,7 @@ import { WaveformVisualizer } from './visualizers/Waveform';
 
 import { RingVisualizer } from "./visualizers/Pramodkhatri10";
 import { GuitarInstrument } from "./instruments/Pramodkhatri10";
-
+import { WallCurtainVisualizer } from './visualizers/salonimahat';
 
 
 
@@ -28,7 +28,8 @@ const instruments = List([PianoInstrument,
   GuitarInstrument //Pramodkhatri10
 ]);
 const visualizers = List([WaveformVisualizer,
-  RingVisualizer //Pramodkhatri10
+  RingVisualizer,  //Pramodkhatri10
+  WallCurtainVisualizer //salonimahat visualizer
 ]);
 
 
