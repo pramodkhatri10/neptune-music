@@ -1,188 +1,271 @@
 body {
-  margin: 0;
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-html, body, #root {
-  height: 100%;
-  width: 100%;
+html,
+body,
+#root {
+    height: 100%;
+    width: 100%;
 }
 
 :root {
-  --sec: rgba(255, 204, 0, 1);
-  --pri: rgba(35, 17, 97, 1);
+    --sec: rgba(255, 204, 0, 1);
+    --pri: rgba(35, 17, 97, 1);
 }
 
 .bg-trans {
-  background-color: transparent;
+    background-color: transparent;
 }
 
 .pri {
-  color: var(--pri)
+    color: var(--pri)
 }
 
 .bg-pri {
-  background-color: var(--pri)
+    background-color: var(--pri)
 }
 
 .b--pri {
-  border-color: var(--pri)
+    border-color: var(--pri)
 }
 
 .sec {
-  color: var(--sec)
+    color: var(--sec)
 }
 
 .bg-sec {
-  background-color: var(--sec)
+    background-color: var(--sec)
 }
 
 .b--sec {
-  border-color: var(--sec)
+    border-color: var(--sec)
 }
 
 .trans {
-  transition: all 0.2s ease-in-out
+    transition: all 0.2s ease-in-out
 }
 
 .spin {
-  -webkit-animation-name: spin;
-  -webkit-animation-duration: 1000ms;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-  -moz-animation-name: spin;
-  -moz-animation-duration: 1000ms;
-  -moz-animation-iteration-count: infinite;
-  -moz-animation-timing-function: linear;
-  -ms-animation-name: spin;
-  -ms-animation-duration: 1000ms;
-  -ms-animation-iteration-count: infinite;
-  -ms-animation-timing-function: linear;
-  animation-name: spin;
-  animation-duration: 1000ms;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 1000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 1000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 1000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    animation-name: spin;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 @-moz-keyframes spin {
-  from { -moz-transform: rotate(0deg); }
-  to { -moz-transform: rotate(360deg); }
+    from {
+        -moz-transform: rotate(0deg);
+    }
+    to {
+        -moz-transform: rotate(360deg);
+    }
 }
+
 @-webkit-keyframes spin {
-  from { -webkit-transform: rotate(0deg); }
-  to { -webkit-transform: rotate(360deg); }
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
 }
+
 @keyframes spin {
-  from {transform:rotate(0deg);}
-  to {transform:rotate(360deg);}
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .guitar {
-  display: flex;
-  position: relative;
-  height: 40vh;
-  width: 100%;
+    display: flex;
+    position: relative;
+    height: 40vh;
+    width: 100%;
 }
 
 .guitar-circle {
-  position: relative;
-  height: 80%;
-  aspect-ratio: 1 / 1;
-  background: black;
-  align-self: center;
-  margin: 0 auto;
-  border-radius: 50%;
+    position: relative;
+    height: 80%;
+    aspect-ratio: 1 / 1;
+    background: black;
+    align-self: center;
+    margin: 0 auto;
+    border-radius: 50%;
 }
 
 .guitar-circle::after {
-  position: absolute;
-  content: "";
-  width: calc(100% - 40px);
-  height: calc(100% - 40px);
-  left: 10px;
-  top: 10px;
-  border: 10px solid white;
-  border-radius: 50%;
+    position: absolute;
+    content: "";
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    left: 10px;
+    top: 10px;
+    border: 10px solid white;
+    border-radius: 50%;
 }
 
 .guitar-strings {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: absolute;
-  left: 0;
-  top: 15%;
-  width: 100%;
-  height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 15%;
+    width: 100%;
+    height: 70%;
 }
 
 .guitar-string {
-  width: 100%;
-  flex: 1;
-  display: grid;
-  grid-template-columns: repeat(23, auto);
-  cursor: pointer;
-  margin: 10px 0;
+    width: 100%;
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(23, auto);
+    cursor: pointer;
+    margin: 10px 0;
 }
 
 .guitar-note:hover {
-  opacity: 1;
+    opacity: 1;
 }
 
 .guitar-note:hover .note-name {
-  display: flex;
+    display: flex;
 }
 
 .guitar-note {
-  background:#cd7f32;
-  opacity: 0.5;
-  border-right: 1px solid white;
-  position: relative;
+    background: #cd7f32;
+    opacity: 0.5;
+    border-right: 1px solid white;
+    position: relative;
 }
 
 .note-name {
-  display: none;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  width: 35px;
-  height: 35px;
-  left: calc(50% - 17px);
-  bottom: calc(100% + 5px);
-  border-radius: 50%;
-  background: chocolate;
-  color: white;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: calc(50% - 17px);
+    bottom: calc(100% + 5px);
+    border-radius: 50%;
+    background: chocolate;
+    color: white;
 }
 
-
 .flute-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .flute-svg {
-  transform: rotate(30deg);
+    transform: rotate(30deg);
 }
 
 .flute-note {
-  cursor: pointer;
-  opacity: 0.5;
+    cursor: pointer;
+    opacity: 0.5;
 }
 
 .flute-note:hover {
-  opacity: 1;
+    opacity: 1;
+}
+
+.xylophone {
+    width: 80%;
+    margin: 0 auto;
+    height: 40vh;
+    display: grid;
+    grid-template-columns: repeat(10, auto);
+}
+
+.xylophone-note {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: 10px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.xylophone-note:hover {
+    opacity: 0.7;
+}
+
+.xylophone-note:nth-child(1) {
+    background: #f44336;
+}
+
+.xylophone-note:nth-child(2) {
+    margin: 15px 10px;
+    background: #ff9800;
+}
+
+.xylophone-note:nth-child(3) {
+    margin: 20px 10px;
+    background: #ffc107;
+}
+
+.xylophone-note:nth-child(4) {
+    margin: 25px 10px;
+    background: #66bb6a;
+}
+
+.xylophone-note:nth-child(5) {
+    margin: 30px 10px;
+    background: #26a69a;
+}
+
+.xylophone-note:nth-child(6) {
+    background: #673ab7;
+    margin: 35px 10px;
+}
+
+.xylophone-note:nth-child(7) {
+    background: #d6328d;
+    margin: 40px 10px;
+}
+
+.xylophone-note:nth-child(8) {
+    background: #ef5350;
+    margin: 45px 10px;
+}
+
+.xylophone-note:nth-child(9) {
+    background: #ff9800;
+    margin: 50px 10px;
+}
+
+.xylophone-note:nth-child(10) {
+    background: #ffc107;
+    margin: 60px 10px;
 }
