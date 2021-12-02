@@ -8,8 +8,13 @@ import { WaveformVisualizer } from './visualizers/Waveform';
 
 import { RingVisualizer } from "./visualizers/Pramodkhatri10";
 import { GuitarInstrument } from "./instruments/Pramodkhatri10";
+<<<<<<< HEAD
 
 import { FluteInstrument } from "./instruments/seelapant13";
+=======
+import { WallCurtainVisualizer } from './visualizers/salonimahat';
+import { CrossSquareVisualizer } from "./visualizers/rujarajbhandari";
+>>>>>>> 8160db3f99ee7052b7ee699e4985571b6ba46b2a
 
 
 
@@ -30,7 +35,9 @@ const instruments = List([PianoInstrument,
   FluteInstrument //seelapant13
 ]);
 const visualizers = List([WaveformVisualizer,
-  RingVisualizer //Pramodkhatri10
+  RingVisualizer,  //Pramodkhatri10
+  WallCurtainVisualizer, //salonimahat visualizer
+  CrossSquareVisualizer //rujarajbhandari
 ]);
 
 
