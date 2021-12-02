@@ -1,3 +1,11 @@
-import { readConfigFile } from "typescript";
+import React from 'react'
 
-readConfigFile
+const seelapant13 = () => {
+    return (
+        <div>
+            
+        </div>
+    )
+}
+
+export default seelapant13
