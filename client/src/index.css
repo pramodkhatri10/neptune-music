@@ -166,3 +166,23 @@ html, body, #root {
   background: chocolate;
   color: white;
 }
+
+
+.flute-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flute-svg {
+  transform: rotate(30deg);
+}
+
+.flute-note {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.flute-note:hover {
+  opacity: 1;
+}
