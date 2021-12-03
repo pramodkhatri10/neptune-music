@@ -196,9 +196,9 @@ body,
 }
 
 .flute-note:hover {
-<<<<<<< HEAD
   opacity: 1;
 }
+
 .bongo-container {
   width: 100%;
   margin: 0 auto;
@@ -226,9 +226,10 @@ body,
 .bongo-lower {
   opacity: 0.7;
 }
-=======
+
+.bongo-lower:hover {
     opacity: 1;
-}
+  }
 
 .xylophone {
     width: 80%;
@@ -300,4 +301,3 @@ body,
     background: #ffc107;
     margin: 60px 10px;
 }
->>>>>>> 7600d76af8f30bca2acf08e1f445d2c1e223e87c
