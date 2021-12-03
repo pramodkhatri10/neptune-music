@@ -26,7 +26,9 @@ export const CrossSquareVisualizer = new Visualizer(
       const x = Math.max(i, 1) * movement;
       const y = height / 2;   
       const h = amplitude * -y;
-     
+      const color = "#" + ((Math.random() * 0xffffff) << 0).toString(16).padStart(6, "0");
+
+      p5.fill(color);   
       p5.rect(x, y, h, h);
     }
     p5.endShape();
