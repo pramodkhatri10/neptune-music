@@ -8,6 +8,7 @@ import { WaveformVisualizer } from './visualizers/Waveform';
 
 import { RingVisualizer } from "./visualizers/Pramodkhatri10";
 import { GuitarInstrument } from "./instruments/Pramodkhatri10";
+import { BongoInstrument } from "./instruments/salonimahat";
 
 import { FluteInstrument } from "./instruments/seelapant13";
 import { WallCurtainVisualizer } from './visualizers/salonimahat';
@@ -29,7 +30,8 @@ export type AppState = Map<string, any>;
 
 const instruments = List([PianoInstrument,
   GuitarInstrument, //Pramodkhatri10
-  FluteInstrument //seelapant13
+  FluteInstrument, //seelapant13
+  BongoInstrument  //salonimahat instrument
 ]);
 const visualizers = List([WaveformVisualizer,
   RingVisualizer,  //Pramodkhatri10
