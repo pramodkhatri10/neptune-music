@@ -11,12 +11,9 @@ import { GuitarInstrument } from "./instruments/Pramodkhatri10";
 import { BongoInstrument } from "./instruments/salonimahat";
 
 import { FluteInstrument } from "./instruments/seelapant13";
-<<<<<<< HEAD
 import { SpringVisualizer } from "./visualizers/seelapant13";
-=======
 import { XylophoneInstrument } from "./instruments/rujarajbhandari";
 
->>>>>>> d1ab093b4fd3cb898d2b70a1e3ca5877044729f9
 
 import { WallCurtainVisualizer } from './visualizers/salonimahat';
 import { CrossSquareVisualizer } from "./visualizers/rujarajbhandari";
