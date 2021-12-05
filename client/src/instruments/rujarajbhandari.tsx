@@ -26,16 +26,18 @@ export function Xylophone(props: InstrumentProps) {
   }, [setSynth]);
 
   return (
+    <div className="bg-bluish-black">
     <div className="xylophone">
       {notes.map((note) => (
         <div
-          className="xylophone-note"
+          className="xylophone-note bg-bluish-black"
           onMouseDown={() => synth?.triggerAttack(`${note}`)}
           onMouseUp={() => synth?.triggerRelease("+0.25")}
         >
           {note}
         </div> 
       ))}
+    </div>
     </div>
   );
 }

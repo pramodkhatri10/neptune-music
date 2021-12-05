@@ -171,7 +171,7 @@ function Guitar(props: InstrumentProps) {
 
 
   return (
-    <div className="guitar">
+    <div className="guitar bg-bluish-black">
       <div className="guitar-circle" />
       <div className="guitar-strings">
         {strings.map((notes, index) => (

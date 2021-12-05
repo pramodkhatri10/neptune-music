@@ -231,6 +231,11 @@ body,
     opacity: 1;
   }
 
+  .detail-label {
+    display: inline-block;
+    min-width: 120px;
+  }
+
 .xylophone {
     width: 80%;
     margin: 0 auto;

@@ -140,8 +140,8 @@ function Piano({ synth, setSynth }: InstrumentProps): JSX.Element {
   ]) as List<OscillatorType>;
 
   return (
-    <div className="pv4">
-      <div className="relative dib h4 w-100 ml4">
+    <div className="pv4 ">
+      <div className="relative dib h4 w-100 ml4 ">
         {Range(2, 7).map(octave =>
           keys.map(key => {
             const isMinor = key.note.indexOf('b') !== -1;

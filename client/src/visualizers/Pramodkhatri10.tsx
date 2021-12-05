@@ -16,7 +16,7 @@ export const RingVisualizer = new Visualizer(
 
     p5.background(0, 0, 0, 205);
 
-    p5.strokeWeight(dim * 0.01);
+    p5.strokeWeight(dim * 0.05);
     p5.stroke(255, 255, 255, 255);
     p5.noFill();
 
