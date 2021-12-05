@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import { Synth } from "tone";
 import { Instrument, InstrumentProps } from "../Instruments";
 
-
 const notes = ["C6", "D6", "E6", "F6", "G6", "A6", "B6", "C7", "D7", "E7"];
 
 export function Xylophone(props: InstrumentProps) {
