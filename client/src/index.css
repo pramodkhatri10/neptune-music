@@ -217,6 +217,7 @@ body,
 
 .bongo-upper:hover {
   opacity: 1;
+  box-sizing: border-box;
 }
 
 .bongo-strip {
@@ -225,10 +226,12 @@ body,
 
 .bongo-lower {
   opacity: 0.7;
+ 
 }
 
 .bongo-lower:hover {
     opacity: 1;
+    box-sizing: border-box;
   }
 
   .detail-label {

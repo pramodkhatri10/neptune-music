@@ -20,9 +20,9 @@ export function Bongo(props: InstrumentProps) {
   }, [setSynth]);
 
   return (
-    <div className="bongo-container bg-bluish-black">
+    <div className="bongo-container bg-white">
       <svg
-        className="bongo bg-bluish-black"
+        className="bongo bg-white"
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
         version="1.1"
