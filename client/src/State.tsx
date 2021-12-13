@@ -6,17 +6,17 @@ import { PianoInstrument } from './instruments/Piano';
 import { WaveformVisualizer } from './visualizers/Waveform';
 
 
-import { RingVisualizer } from "./visualizers/Pramodkhatri10";
-import { GuitarInstrument } from "./instruments/Pramodkhatri10";
-import { BongoInstrument } from "./instruments/salonimahat";
+import { RingVisualizer } from "./visualizers/Rings";
+import { GuitarInstrument } from "./instruments/Guitar";
+import { BongoInstrument } from "./instruments/Bongo";
 
-import { FluteInstrument } from "./instruments/seelapant13";
-import { SpringVisualizer } from "./visualizers/seelapant13";
-import { XylophoneInstrument } from "./instruments/rujarajbhandari";
+import { FluteInstrument } from "./instruments/Flute";
+import { SpringVisualizer } from "./visualizers/Springs";
+import { XylophoneInstrument } from "./instruments/Xylophone";
 
 
-import { WallCurtainVisualizer } from './visualizers/salonimahat';
-import { CrossSquareVisualizer } from "./visualizers/rujarajbhandari";
+import { WallCurtainVisualizer } from './visualizers/WallCurtains';
+import { CrossSquareVisualizer } from "./visualizers/CrossSquares";
 
 
 

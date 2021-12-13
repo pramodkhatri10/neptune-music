@@ -20,18 +20,18 @@ export function Bongo(props: InstrumentProps) {
   }, [setSynth]);
 
   return (
-    <div className="bongo-container bg-white">
-      <svg
-        className="bongo bg-white"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlnsXlink="http://www.w3.org/1999/xlink"
-        version="1.1"
-        x="0px"
-        y="0px"
-        viewBox="0 0 1000 1000"
-        enable-background="new 0 0 1000 1000"
-        xmlSpace="preserve"
-      >
+    <div className="bongo-container bg-bluish-black">
+    <svg
+      className="bongo bg-bluish-black"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
+      version="1.1"
+      x="0px"
+      y="0px"
+      viewBox="0 0 1000 1000"
+      enable-background="new 0 0 1000 1000"
+      xmlSpace="preserve"
+    >
         <g>
           <g transform="translate(0.000000,511.000000) scale(0.150000,-0.150000)">
             <path
@@ -63,4 +63,4 @@ export function Bongo(props: InstrumentProps) {
   );
 }
 
-export const BongoInstrument = new Instrument("salonimahat", Bongo);
+export const BongoInstrument = new Instrument("Bongo", Bongo);

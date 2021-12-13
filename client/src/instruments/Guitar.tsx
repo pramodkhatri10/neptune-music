@@ -194,4 +194,4 @@ function Guitar(props: InstrumentProps) {
   );
 }
 
-export const GuitarInstrument = new Instrument("Pramodkhatri10", Guitar);
+export const GuitarInstrument = new Instrument("Guitar", Guitar);

@@ -19,7 +19,7 @@ const randomColors = Array(50)
   );
 
 export const WallCurtainVisualizer = new Visualizer(
-  "salonimahat",
+  "WallCurtains",
   (p5: P5, analyzer: Tone.Analyser) => {
     const width = window.innerWidth;
     const height = window.innerHeight / 2;

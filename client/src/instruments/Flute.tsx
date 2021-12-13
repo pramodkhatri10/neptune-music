@@ -356,4 +356,4 @@ function Flute(props: InstrumentProps) {
   );
 }
 
-export const FluteInstrument = new Instrument("seelapant13", Flute); 
+export const FluteInstrument = new Instrument("Flute", Flute); 

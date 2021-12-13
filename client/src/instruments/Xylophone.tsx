@@ -42,4 +42,4 @@ export function Xylophone(props: InstrumentProps) {
   );
 }
 
-export const XylophoneInstrument = new Instrument("rujarajbhandari", Xylophone); 
+export const XylophoneInstrument = new Instrument("Xylophone", Xylophone); 
