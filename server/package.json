@@ -4,7 +4,7 @@
    "description": "CSC 600 musical application. Get ready to shred.",
    "main": "index.js",
    "scripts": {
-      "start": "nodemon index.ts"
+      "start": "node index.ts"
    },
    "repository": {
       "type": "git",
